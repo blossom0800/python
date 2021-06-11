@@ -31,4 +31,10 @@
 # 특정 컬럼에서 특정 문자가 들어가는지 여부 확인(T/F), sum 구하기
  - 게속 오류가 난다 -- Do we have a boolean indexer?
  - df[df["컬럼명"].str.contains("찾고자하는 문자")]
- - 사실 위의 구조가 
+ - 사실 위의 구조가 정확히 이해되지는 않음
+ - 다시 해보기 > df["컬럼명"].str.contains("찾으려는 문자") --> T/F로 나왔음!
+ - 총 갯수 구하기 --> 뒤에 .sum() 만 붙여주면 됨.
+
+# 새 컬럼을 만들고 그 컬럼의 groupby를 하기
+ - https://pandas.pydata.org/pandas-docs/stable/user_guide/groupby.html
+ - 
