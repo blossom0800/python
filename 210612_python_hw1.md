@@ -21,3 +21,14 @@
  - count, unique, top, freq를 출력함
  - df.describe(include='object')
  - 배운 점: object 맨앞을 대문자로만 써도 인식을 못함 ㅠ_ㅠ
+
+# 컬럼값을 소문자로 바꾸기
+ - 역시 한번에 되지 않았음
+ - df['컬럼명'] 뒤에 lower()를 써야 하는 것은 알고 있었지만
+ - 중간에 str이 들어가야 했음
+ - 즉, df.['컬럼명'].str.lower()로 입력해야 정상 출력됨
+
+# 특정 컬럼에서 특정 문자가 들어가는지 여부 확인(T/F), sum 구하기
+ - 게속 오류가 난다 -- Do we have a boolean indexer?
+ - df[df["컬럼명"].str.contains("찾고자하는 문자")]
+ - 사실 위의 구조가 
