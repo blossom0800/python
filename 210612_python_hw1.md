@@ -37,4 +37,4 @@
 
 # 새 컬럼을 만들고 그 컬럼의 groupby를 하기
  - https://pandas.pydata.org/pandas-docs/stable/user_guide/groupby.html
- - 
+ 
