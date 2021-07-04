@@ -47,7 +47,10 @@
    - 2차: df[(df['embarked'] == 'C') & (df['pclass'] == 3)].shape << 성공
   
   # Boolean indexing이 뭔지 다시 공부해볼 것
-  
+   - Boolean indexing is a type of indexing which uses actual values of the data in the DataFrame. 
+   - In boolean indexing, we can filter a data in four ways
+      .Accessing a DataFrame with a boolean index. Applying a boolean mask to a dataframe. Masking data based on column value. Masking data based on index value.
+      .(Source) https://www.geeksforgeeks.org/boolean-indexing-in-pandas/
   # (Question) fare 가 500보다 큰 값을 출력합니다
    - df[df["fare"] > 500]['fare'] #['fare의 의미는?']
   
