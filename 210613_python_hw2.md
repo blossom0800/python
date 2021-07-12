@@ -1,5 +1,5 @@
 # 특정 컬럼에서 특정 문자값 찾기
- - df['embark_lower'].str.contains('south') ## 처음 풀때는 이 코드로 작동했는데 갑자기 작동하지 않음
+ - `df['embark_lower'].str.contains('south')` ## 처음 풀때는 이 코드로 작동했는데 갑자기 작동하지 않음
  - 오류 코드
  
          ---------------------------------------------------------------------------
@@ -43,8 +43,8 @@
          ---------------------------------------------------------------------------
 
   # 두 가지 조건이 필터된(Series 2개) 데이터프레임 만들기
-   - 1차: df.sort_values(by = ["embarked_c", "pclass_3"]) << 에러남
-   - 2차: df[(df['embarked'] == 'C') & (df['pclass'] == 3)].shape << 성공
+   - 1차: `df.sort_values(by = ["embarked_c", "pclass_3"])` << 에러남
+   - 2차: `df[(df['embarked'] == 'C') & (df['pclass'] == 3)].shape` << 성공
   
   # Boolean indexing이 뭔지 다시 공부해볼 것
    - Boolean indexing is a type of indexing which uses actual values of the data in the DataFrame. 
@@ -52,7 +52,7 @@
       .Accessing a DataFrame with a boolean index. Applying a boolean mask to a dataframe. Masking data based on column value. Masking data based on index value.
       .(Source) https://www.geeksforgeeks.org/boolean-indexing-in-pandas/
   # (Question) fare 가 500보다 큰 값을 출력합니다
-   - df[df["fare"] > 500]['fare'] #['fare의 의미는?']
+   - `df[df["fare"] > 500]['fare']` #['fare']의 의미는?
   
   
   
