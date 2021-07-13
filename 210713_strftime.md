@@ -1,5 +1,6 @@
 # `.strftime()`
   - The strftime() method returns a string representing date and time using date, time or datetime object
+    (Source: https://www.programiz.com/python-programming/datetime/strftime)
 
 # 예시_Input
 ```
